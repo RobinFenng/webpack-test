@@ -1,5 +1,5 @@
 ##webpack step 1
-
+Hello world
 ###步骤
 1.	cd 目录
 2.	webpack 打包
@@ -10,7 +10,7 @@
 
 	var path = require('path');
 	module.exports = {
-	    entry: './main.js',
+	    entry: './entry1.js',
 	    output: {
 	        path: path.resolve(__dirname, 'build'),
 	        filename: 'bundle.js'
@@ -21,8 +21,8 @@
 
 
 ###参数
-1.	entry : 源文件
-2.	output->path:编译后存放的地址
-3.	output->filename:编译后的文件名
+-	entry : 源文件
+-	output->path:编译后存放的地址
+-	output->filename:编译后的文件名
  
 
