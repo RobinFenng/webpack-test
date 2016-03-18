@@ -3,12 +3,9 @@
  */
 var path = require('path');
 module.exports = {
-    entry: {
-        bundle1:'./main.js',
-        bundle2:'./main1.js',
-    },
+    entry: './main.js',
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: '[name].js'
+        filename: 'bundle.js'
     }
 };
