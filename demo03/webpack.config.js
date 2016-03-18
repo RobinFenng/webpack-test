@@ -4,11 +4,15 @@
 var path = require('path');
 module.exports = {
     entry: {
-        'bundle1':'./main.js',
-        'bundle2':'./entry2.js',
+        'bundle':'./main.js'
     },
     output: {
         path: path.resolve(__dirname, 'build'),
         filename: '[name].js'
+    },
+    module: {
+        loaders:[
+            { test: /\.css$/, loader: 'style!css' },
+        ]
     }
 };
